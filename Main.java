@@ -65,6 +65,24 @@ public class Main {
         persona.setTelefono("5555-1234");
 
         System.out.println("El nombre de la persona es: " + persona.getNombre() + " tiene " + persona.getEdad() + " años de edad y su número de teléfono es: " + persona.getTelefono());
+
+        Cliente cliente = new Cliente();
+
+        cliente.setEdad(32);
+        cliente.setNombre("Edwin");
+        cliente.setTelefono("5432-1234");
+        cliente.setCredito(10000);
+
+        System.out.println("El nombre de la persona es: " + cliente.getNombre() + " tiene " + cliente.getEdad() + " años de edad y su número de teléfono es: " + cliente.getTelefono() + " tiene un crédito de " + cliente.getCredito());
+
+        Trabajador trabajador = new Trabajador();
+
+        trabajador.setEdad(40);
+        trabajador.setNombre("Einsen");
+        trabajador.setTelefono("5555-9876");
+        trabajador.setSalario(15000.00F);
+
+        System.out.println("El nombre de la persona es: " + trabajador.getNombre() + " tiene " + trabajador.getEdad() + " años de edad y su número de teléfono es: " + trabajador.getTelefono() + " tiene un salario de " + trabajador.getSalario());
     }
 
     public static int suma(int numero_uno, int numero_dos, int numero_tres) {
